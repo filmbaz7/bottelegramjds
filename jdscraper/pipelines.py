@@ -1,11 +1,10 @@
-
 from .db import get_connection
 
 class JdscraperPipeline:
     def open_spider(self, spider):
         self.conn = get_connection()
         self.cursor = self.conn.cursor()
-        self.cursor.execute('DELETE FROM products')
+        self.cursor.execute('DELETE FROM products')  # حذف داده‌های قبلی قبل از شروع اسکرپ
         self.conn.commit()
 
     def close_spider(self, spider):
