@@ -4,7 +4,7 @@ import requests
 from fastapi import FastAPI, Request, BackgroundTasks
 from apscheduler.schedulers.background import BackgroundScheduler
 
-BOT_TOKEN = "توکن_ربات_تو_اینجا_بزار"
+BOT_TOKEN = "8020973419:AAGtjkbfb4BJBIR3_lA5GMOUzRZdO0iTGDE"
 MIN_DISCOUNT = 30
 DB_PATH = "products.db"
 
